@@ -1,0 +1,300 @@
+
+
+
+@font-face {
+  font-family: "SDGothic";
+  src: url(../font/AppleSDGothicNeoM.ttf);
+  font-style: normal;
+  font-display: swap;
+  
+}
+
+
+
+@font-face {
+  font-family: "SDGothicL";
+  src: url(../font/AppleSDGothicNeoL.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+html {
+  font-size: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+html,
+body {
+  background: #fff;
+  z-index: 1;
+  /* font-family: "SDGothicL";
+  font-variation-settings: "srff" 0, "ital" 0, "wght" 70; */
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+button,
+input,
+label {
+  cursor: pointer;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 2vw;
+ }
+
+ .text {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  bottom: 0;
+  margin: auto 0;
+  top:0;
+}
+.big {
+  font-size: 1rem;
+  font-family: "SDGothicL";
+  width: 100%;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  user-select: none;
+}
+.intro {
+ background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0vw;
+bottom: 0vh;
+top: 0vh;
+padding-top: 3vh;
+z-index: 10000;
+width: 100vw;
+height: 100vh;
+
+}
+
+.intro div{
+  margin: 1vw 0;
+}
+
+.work{
+  text-decoration:none ;
+  margin: 0.6vw 0;
+  color: white;
+}
+.p-title{
+  margin-bottom: 2vw;
+  font-family:"prophet";
+}
+.works{
+  font-family: "prophet-italic";
+  width: 30vw;
+  font-size: 1.6vw;
+  color: white;
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 30;
+}
+
+h2{
+  font-size: 2vw;
+}
+
+.vertical{
+  margin-top: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.l-txt{
+font-size: 1.3vw;
+}
+
+.direction{
+width: 6vw;
+height: auto;
+transition: all ease 0.3s;
+}
+
+.direction .hidden{
+display: none;
+transition: all ease 0.3s;
+}
+
+#direction{
+position: absolute; 
+top: 3vh;
+left: -2vw;
+}
+
+summary{
+margin-bottom: 1vw;
+}
+
+ summary{
+  list-style: none;
+ }
+
+ .upside {
+  background-color: #333;
+  padding: 2vh 4vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#name {
+text-decoration: none;
+top: 1vw;
+left: 1vw;
+font-size: 1.5vw;
+color: white;
+font-family: "ABCFavoritEdu-Regular";
+position: fixed;
+top: 15px;
+left: 20px;
+/* color: rgb(0,255,255); */
+background-color: #000000d4;
+z-index: 99;
+border-radius: 600px;
+padding: 10px 16px;
+display: inline-block;
+margin: 0px;
+cursor: pointer;
+font-weight: 500;
+box-shadow: 0px 0px 10px rgba(150,150,150,1);
+}
+.infos{
+display: inline-grid;
+grid-template-columns: repeat(3,minmax(300px, 1fr));
+gap: 5vw;
+font-size: 1vw;
+margin-bottom: 4vw;
+margin-top: 2vw;
+}
+
+grid {
+  display: inline-grid;
+  grid-template-columns: repeat(3,minmax(300px, 1fr));
+  gap: 3.5vw;
+  padding: 0vw;
+  position: relative;
+  
+}
+
+.grid2{
+width: 93vw;
+display: grid;
+gap: 3.5vw;
+grid-template-columns: repeat(2,minmax(300px, 1fr));
+margin-bottom: 3.5vw;
+
+}
+.if{
+font-family: "ABCFavoritEdu-Regular";
+font-size: 1.1vw;
+}
+
+.project {
+  /* border: 1px solid black; */
+  padding: 0vw;
+  
+}
+
+.project2 img{
+width:44.75vw;
+}
+
+img{
+width: 28vw;
+height: auto;
+}
+
+
+.right {
+  text-align: right;
+}
+
+.middle {
+  text-align: center;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.hidden {
+  display: none !important;
+}
+
+#video-cover {
+  width: 100vw;
+  height: 100vh;
+
+}
+
+@media (max-width: 786px) {
+  .big {
+    font-size: 3rem;
+    padding-top: 1vh;
+  }
+  #add{
+    display: none;
+  }
+}
+
+@media (min-width: 786px) {
+  .big {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 900px) {
+  .big {
+    font-size: 4rem;
+  }
+}
+
+
+@media (min-width: 999px) {
+  
+  #add{display: block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .big {
+    font-size: 4rem;
+  }
+}
