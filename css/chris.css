@@ -1384,3 +1384,24 @@ body.active-tags .projects li.active, body.active-tags .projects-list a.active {
   display: block;
   z-index: 2000;
 }
+
+#swipe_upL {
+  position: fixed;
+  left: calc(0% + 22px);
+  bottom: 20px;
+  width: 43px;
+  height: 51px;
+  transition: all .9s cubic-bezier(.02,.48,.19,.99);
+  display: block;
+  z-index: 2000;
+}
+#swipe_upR {
+  position: fixed;
+  right: calc(0% + 22px);
+  bottom: 20px;
+  width: 43px;
+  height: 51px;
+  transition: all .9s cubic-bezier(.02,.48,.19,.99);
+  display: block;
+  z-index: 2000;
+}
