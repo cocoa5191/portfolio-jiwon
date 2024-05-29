@@ -10,15 +10,27 @@
 }
 
 
-
 @font-face {
-  font-family: "SDGothicL";
-  src: url(../font/AppleSDGothicNeoL.ttf);
+  font-family: "Gra";
+  src: url(../font/Graebenbach-Regular.otf);
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "pretendard";
+  src: url(../font/Pretendard-Medium.woff);
+  font-style: normal;
+  font-display: swap;
+}
 
+#eng{
+  font-family: "Gra";
+}
+
+#add{
+  font-family: "Gra";
+}
 
 html {
   font-size: 100%;
@@ -83,7 +95,7 @@ h1{
 }
 .big {
   font-size: 1rem;
-  font-family: "SDGothicL";
+  font-family: "pretendard";
   width: 100%;
   color: rgb(0, 0, 0);
   line-height: 1;
@@ -99,6 +111,7 @@ padding-top: 3vh;
 z-index: 10000;
 width: 100vw;
 height: 100vh;
+
 
 }
 
