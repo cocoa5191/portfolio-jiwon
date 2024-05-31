@@ -144,6 +144,7 @@ $(document).ready(function() {
   function scrollDown() {
     isAnimating = true;
     $('.intro').css('transform', 'translateY(-100vh)');
+    $('.intro').hide();
     $('header, footer, a').fadeIn();
 
     setTimeout(function() {
@@ -154,6 +155,7 @@ $(document).ready(function() {
   function scrollUp() {
     isAnimating = true;
     $('.intro').css('transform', 'translateY(0)');
+    $('.intro').show();
     $('header, footer, a').fadeOut();
 
     setTimeout(function() {
