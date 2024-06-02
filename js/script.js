@@ -119,6 +119,55 @@ function clickTouchHandler() {
 //   });
 // });
 
+// $(document).ready(function() {
+//   let isAnimating = false;
+
+//   // 페이지 로드 시 header와 footer를 숨김
+//   $('header, footer, a').hide();
+
+//   $(window).on('wheel', function(event) {
+//     if (!isAnimating) {
+//       if (event.originalEvent.deltaY > 0) {
+//         scrollDown();
+//       } else if (event.originalEvent.deltaY < 0) {
+//         scrollUp();
+//       }
+//     }
+//   });
+
+//   $('#swipe_up').on('click', function() {
+//     if (!isAnimating) {
+//       scrollDown();
+//     }
+//   });
+
+//   function scrollDown() {
+//     isAnimating = true;
+//     $('.intro').css('transform', 'translateY(-100vh)');
+//     $('.intro').hide();
+//     $('header, footer, a').fadeIn();
+
+//     setTimeout(function() {
+//       isAnimating = false;
+//     }, 500);
+//   }
+
+//   function scrollUp() {
+//     isAnimating = true;
+//     $('.intro').css('transform', 'translateY(0)');
+//     $('.intro').show();
+//     $('header, footer, a').fadeOut();
+
+//     setTimeout(function() {
+//       isAnimating = false;
+//     }, 500);
+//   }
+
+// });
+
+
+
+
 $(document).ready(function() {
   let isAnimating = false;
 
@@ -126,42 +175,35 @@ $(document).ready(function() {
   $('header, footer, a').hide();
 
   $(window).on('wheel', function(event) {
-    if (!isAnimating) {
-      if (event.originalEvent.deltaY > 0) {
-        scrollDown();
-      } else if (event.originalEvent.deltaY < 0) {
-        scrollUp();
+      if (!isAnimating) {
+          if (event.originalEvent.deltaY > 0) {
+              scrollDown();
+          } else if (event.originalEvent.deltaY < 0) {
+              scrollUp();
+          }
       }
-    }
   });
 
   $('#swipe_up').on('click', function() {
-    if (!isAnimating) {
-      scrollDown();
-    }
+      if (!isAnimating) {
+          scrollDown();
+      }
   });
 
   function scrollDown() {
-    isAnimating = true;
-    $('.intro').css('transform', 'translateY(-100vh)');
-    $('.intro').hide();
-    $('header, footer, a').fadeIn();
-
-    setTimeout(function() {
-      isAnimating = false;
-    }, 500);
+      isAnimating = true;
+      $('.intro').css('transform', 'translateY(-100vh)').fadeOut(500, function() {
+          $('header, footer, a').fadeIn();
+          isAnimating = false;
+      });
   }
 
   function scrollUp() {
-    isAnimating = true;
-    $('.intro').css('transform', 'translateY(0)');
-    $('.intro').show();
-    $('header, footer, a').fadeOut();
-
-    setTimeout(function() {
-      isAnimating = false;
-    }, 500);
+      isAnimating = true;
+      $('.intro').css('transform', 'translateY(0)').fadeIn(500, function() {
+          $('header, footer, a').fadeOut();
+          isAnimating = false;
+      });
   }
+
 });
-
-

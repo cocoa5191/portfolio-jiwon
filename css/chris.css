@@ -1405,3 +1405,33 @@ body.active-tags .projects li.active, body.active-tags .projects-list a.active {
   display: block;
   z-index: 2000;
 }
+
+
+/* 낙서 */
+.Process{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2vw;
+
+}
+
+.process-text{
+  position:  absolute;
+  text-align: right;
+  width: 30vw;
+  right: 17vw;
+}
+  
+.process-img{
+ 
+  position: relative;
+ left :13vw;
+}
+
+#nakseo-process{
+  border-radius: 10px;
+}
+
+
